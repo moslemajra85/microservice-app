@@ -1,0 +1,15 @@
+{
+  "name": "microservice-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "product:service": "npm start --prefix product-service",
+    "order:service": "npm start --prefix order-service",
+    "payment:service": "npm start --prefix payment-service",
+    "notification:service": "npm start --prefix notification-service"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
