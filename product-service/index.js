@@ -66,8 +66,3 @@ app.listen(PORT, (error) => {
 
   console.log(`Product Service is running on port http://localhost:${PORT}`);
 });
-
-
-curl -X POST http://localhost:3004/orders \
-  -H "Content-Type: application/json" \
-  -d '{"productId":3}'

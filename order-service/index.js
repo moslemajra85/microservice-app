@@ -6,9 +6,12 @@ const PORT = 5004;
 
 app.use(express.json());
 
-const PRODUCT_SERVICE_URL = "http://localhost:5001";
-const PAYMENT_SERVICE_URL = "http://localhost:5002";
-const NOTIFICATION_SERVICE_URL = "http://localhost:5003";
+const PRODUCT_SERVICE_URL =
+  process.env.PRODUCT_SERVICE_URL || "http://localhost:5001";
+const PAYMENT_SERVICE_URL =
+  process.env.PAYMENT_SERVICE_URL || "http://localhost:5002";
+const NOTIFICATION_SERVICE_URL =
+  process.env.NOTIFICATION_SERVICE_URL || "http://localhost:5003";
 
 let nextOrderId = 1;
 const orders = [];
